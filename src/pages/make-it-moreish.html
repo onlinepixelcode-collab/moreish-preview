@@ -1,0 +1,65 @@
+<!--{"title": "Make It Moreish | Design Your Own Cheesecake or Ice-Cream Cake | Just Moreish", "description": "Build your own cake in live 3D: ice-cream cheesecake, New York baked cheesecake or ice-cream cake, with your base, flavour, toppings and size. Send it to Just Moreish for a quote.", "page": "build", "out": "make-it-moreish.html", "scripts": ["assets/js/builder.module.js"], "headExtra": "<script type=\"importmap\">{\"imports\":{\"three\":\"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js\",\"three/addons/\":\"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/\"}}</script>"}-->
+    <section class="phero phero--short">
+      <div class="blob-bg" style="width:38vw;height:38vw;background:var(--butter);right:-8vw;top:-6vw" data-speed="1"></div>
+      <div class="blob-bg" style="width:30vw;height:30vw;background:var(--peri);left:-6vw;bottom:-10vw" data-speed="-1"></div>
+      <div class="wrap">
+        <p class="mono kicker">Make It Moreish · Custom cakes</p>
+        <h1 class="display display--xl phero__title" data-chars>Make it <em>yours.</em></h1>
+        <div class="phero__meta">
+          <p class="lede" style="margin:0">Pick a type, a base, a flavour and the toppings. Your cake builds itself in live 3D as you choose. Drag it to spin it, then send it to us for a quote.</p>
+          <a class="link-arrow" href="#builder">Start building ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" id="builder">
+      <div class="wrap builder">
+        <div class="builder__preview" data-cursor="Drag">
+          <canvas id="cake3d" aria-label="Live 3D preview of your cake" role="img"></canvas>
+          <p class="mono" style="position:absolute;top:18px;left:20px" data-b-title>Your cake</p>
+          <div style="position:absolute;top:12px;right:12px;display:flex;gap:6px">
+            <button class="icon-btn" type="button" data-b-surprise aria-label="Surprise me with a random cake" title="Surprise me"><svg viewBox="0 0 24 24"><path d="M4 7h3l10 10h3M4 17h3l3-3M14 10l3-3h3"/><path d="M18 4l3 3-3 3M18 14l3 3-3 3"/></svg></button>
+            <button class="icon-btn" type="button" data-b-reset aria-label="Start again" title="Start again"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.5-5.8L4 8.5"/><path d="M4 4v4.5h4.5"/></svg></button>
+          </div>
+          <div class="builder__summary" data-b-summary></div>
+        </div>
+
+        <div class="builder__steps">
+          <fieldset class="bstep">
+            <legend class="sr-only">Step 1: type</legend>
+            <div class="bstep__head"><span class="mono">01</span><h2>Type</h2></div>
+            <div class="swatches" data-b-group="type">{{bType}}</div>
+          </fieldset>
+          <fieldset class="bstep">
+            <legend class="sr-only">Step 2: base</legend>
+            <div class="bstep__head"><span class="mono">02</span><h2>Base</h2></div>
+            <div class="swatches" data-b-group="base">{{bBase}}</div>
+          </fieldset>
+          <fieldset class="bstep">
+            <legend class="sr-only">Step 3: flavour</legend>
+            <div class="bstep__head"><span class="mono">03</span><h2>Flavour</h2></div>
+            <div class="swatches" data-b-group="flavour">{{bFlavour}}</div>
+          </fieldset>
+          <fieldset class="bstep">
+            <legend class="sr-only">Step 4: toppings, up to four</legend>
+            <div class="bstep__head"><span class="mono">04</span><h2>Toppings</h2><small data-b-count>Pick up to 4</small></div>
+            <div class="swatches" data-b-group="toppings">{{bToppings}}</div>
+          </fieldset>
+          <fieldset class="bstep">
+            <legend class="sr-only">Step 5: size</legend>
+            <div class="bstep__head"><span class="mono">05</span><h2>Size</h2></div>
+            <div class="swatches" data-b-group="size">{{bSize}}</div>
+            <label class="field" style="margin-top:18px"><span>Message on the cake (optional)</span><input type="text" maxlength="40" placeholder="Eid Mubarak" data-b-message></label>
+            <label class="field" style="margin-top:14px"><span>When do you need it?</span><input type="date" data-b-date></label>
+          </fieldset>
+          <div class="pbuy__row">
+            <a class="btn btn--big btn--grow" href="#" target="_blank" rel="noopener" data-b-send data-magnetic>Request a quote on WhatsApp</a>
+            <button class="btn btn--ghost btn--big" type="button" data-b-add>Add to box</button>
+          </div>
+          <div class="nitty">
+            <h3>The nitty gritty</h3>
+            <ul>{{nitty}}</ul>
+          </div>
+        </div>
+      </div>
+    </section>

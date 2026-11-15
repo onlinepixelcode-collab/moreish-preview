@@ -1,0 +1,19 @@
+# Netlify settings for the private Just Moreish preview (static site, no build step).
+# The password comes from the PREVIEW_PASSWORD environment variable, set in Netlify's site settings (never in this repo).
+[build]
+  publish = "."
+  command = ""
+
+[[edge_functions]]
+  path = "/*"
+  function = "gate"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/frames/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

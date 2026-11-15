@@ -1,0 +1,191 @@
+<!--{"title": "Just Moreish | Home of the Ice-Cream Cheesecake, Johannesburg", "description": "Half ice-cream, half cheesecake, handmade in Johannesburg. Order ice-cream cheesecakes, gelato, croissants and coffee on WhatsApp, or book a live dessert station.", "page": "home", "out": "index.html", "scripts": ["assets/js/home.js"]}-->
+    <!-- ===== 3D scroll story ===== -->
+    <section class="story" id="story" aria-label="The ice-cream cheesecake, layer by layer">
+      <div class="story__stage stage-light">
+        <canvas class="story__canvas" id="seq" aria-hidden="true"></canvas>
+        <img class="story__still" id="still" src="{{root}}frames/desktop/0160.webp" alt="Five Just Moreish ice-cream cheesecakes on pastel plinths: Bubblegum, Coffee, Original, Caramel and Marshmallow">
+        <!-- 1. opens on the line-up -->
+        <div class="beat beat--lineup beat--first" data-beat="0,0.11" data-in="0">
+          <p class="mono kicker">Just Moreish · Johannesburg</p>
+          <h1 class="display">Ice-cream. <em>Cheesecake.</em></h1>
+          <p class="lede">One spoon, both desserts. Pick your favourite, or all five.</p>
+          <div class="beat__actions">
+            <a class="btn" href="{{root}}parlour.html" data-magnetic>Shop The Parlour</a>
+            <a class="btn btn--ghost" href="{{root}}make-it-moreish.html">Design your own</a>
+          </div>
+        </div>
+        <div class="tags" data-beat="0,0.08" data-in="0">
+          <a href="{{root}}parlour/bubblegum.html" style="--x:10%">Bubblegum</a><a href="{{root}}parlour/coffee.html" style="--x:30%">Coffee</a><a href="{{root}}parlour/original.html" style="--x:50%">Original</a><a href="{{root}}parlour/caramel.html" style="--x:70%">Caramel</a><a href="{{root}}parlour/marshmallow.html" style="--x:90%">Marshmallow</a>
+        </div>
+        <div class="scroll-hint" data-beat="0,0.05" data-in="0" aria-hidden="true"><span class="mono">Scroll</span><i></i></div>
+        <!-- 2. push in to the meringue -->
+        <div class="beat beat--macro" data-beat="0.28,0.43">
+          <p class="mono kicker">Handmade in Joburg</p>
+          <h2 class="display display--m">Small batches.<br><em>Big spoons.</em></h2>
+          <p class="lede">Every cheesecake is set, frozen and topped by hand, so it tastes like it was made for you. Because it was.</p>
+        </div>
+        <!-- 3. it comes apart -->
+        <div class="beat beat--layers" data-beat="0.47,0.66">
+          <p class="mono kicker">Built in three layers</p>
+          <h2 class="display display--m">Take it apart.<br><em>It still makes sense.</em></h2>
+        </div>
+        <ol class="callouts" data-beat="0.51,0.65" aria-label="The three layers">
+          <li class="callout callout--top"><b>Meringue kiss</b><span>Piped by hand, crisp outside, soft in the middle</span></li>
+          <li class="callout callout--mid"><b>Ice-cream cheesecake</b><span>Cream-cheese rich, churned cold, cut thick</span></li>
+          <li class="callout callout--low"><b>Biscuit base</b><span>Buttery crumb, pressed by hand</span></li>
+        </ol>
+        <!-- 4. back together: the hero -->
+        <div class="beat beat--hero" data-beat="0.87,1.01">
+          <p class="mono kicker">The Original</p>
+          <h2 class="display display--m">The home of the <em>ice-cream cheesecake.</em></h2>
+          <div class="beat__actions">
+            <a class="btn" href="{{root}}parlour/original.html" data-magnetic>Meet the Original</a>
+            <a class="btn btn--ghost" href="{{root}}parlour.html">All flavours</a>
+          </div>
+        </div>
+        <div class="story__progress" aria-hidden="true"><i id="storyBar"></i></div>
+      </div>
+    </section>
+
+    <!-- ===== marquee ===== -->
+    <div class="marquee" data-marquee="1" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__item">Ice-cream <em>×</em> cheesecake <i class="blob" style="--c:var(--mint)"></i></span>
+        <span class="marquee__item">Handmade in Joburg <i class="blob" style="--c:var(--blush)"></i></span>
+        <span class="marquee__item">Live stations <i class="blob" style="--c:var(--peri)"></i></span>
+        <span class="marquee__item">Gourmet croissants <i class="blob" style="--c:var(--butter)"></i></span>
+        <span class="marquee__item">Arabica coffee <i class="blob" style="--c:var(--orchid)"></i></span>
+        <span class="marquee__item">Thick shakes <i class="blob" style="--c:var(--mint)"></i></span>
+      </div>
+    </div>
+
+    <!-- ===== why choose ===== -->
+    <section class="section why" id="why">
+      <div class="wrap">
+        <header class="section__head section__head--row">
+          <div>
+            <p class="mono kicker">Why choose Just Moreish</p>
+            <h2 class="display display--l" data-split>Two desserts.<br><em>Zero compromise.</em></h2>
+          </div>
+          <p class="lede" style="max-width:30em">Other places make ice-cream or cheesecake. We put them together, by hand, in small batches, and then bring the whole thing to your party.</p>
+        </header>
+        <div class="why__grid">
+          <article class="why-card why-card--wide why-card--tint" style="--c:var(--blush)" data-reveal>
+            <div class="why-card__icon" style="--c:#fff"><svg viewBox="0 0 24 24"><path d="M5 11h14l-1.5 9h-11z"/><path d="M7 11V8a5 5 0 0 1 10 0v3"/><path d="M12 3v2"/></svg></div>
+            <div><h3>The original ice-cream cheesecake</h3><p>Half churned ice-cream, half cream-cheese cheesecake, on a buttery biscuit base. It's our whole thing, and we've been perfecting it since day one.</p></div>
+            <img class="why-card__img" src="{{root}}img/products/original.webp" alt="" loading="lazy" width="800" height="1000">
+          </article>
+          <article class="why-card" data-reveal>
+            <div class="why-card__icon" style="--c:var(--mint)"><svg viewBox="0 0 24 24"><path d="M12 21c4-3 7-6 7-10a7 7 0 0 0-14 0c0 4 3 7 7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></div>
+            <div><h3>Handmade in Johannesburg</h3><p>Small batches, set and topped by hand, never factory-frozen for months.</p></div>
+          </article>
+          <article class="why-card why-card--tint" style="--c:var(--butter)" data-reveal>
+            <div><p class="mono">Make It Moreish</p>
+              <div class="counts" style="margin-top:18px"><div><b data-count="5">5</b><span>Bases</span></div><div><b data-count="9">9</b><span>Flavours</span></div><div><b data-count="10">10</b><span>Toppings</span></div></div></div>
+            <div><h3>Your cake, your rules</h3><p>Design a 22 or 25 cm cake and watch it build in 3D.</p></div>
+          </article>
+          <article class="why-card why-card--tint" style="--c:var(--peri)" data-reveal>
+            <div class="why-card__icon" style="--c:#fff"><svg viewBox="0 0 24 24"><path d="M3 10h18v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"/><path d="M6 17v4M18 17v4M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
+            <div><h3>We bring the dessert bar</h3><p>Live coffee, ice-cream, freezo and croissant stations for weddings, Eid and corporate events.</p></div>
+          </article>
+          <article class="why-card" data-reveal>
+            <div class="why-card__icon" style="--c:var(--orchid)"><svg viewBox="0 0 24 24"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 3c0 1.5 1 1.5 1 3M12 3c0 1.5 1 1.5 1 3"/></svg></div>
+            <div><h3>Coffee too. Proper coffee.</h3><p>Our own 100% Arabica beans: milk chocolate, almond, apple. In the cup or in 250 g and 1 kg bags.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== horizontal flavours ===== -->
+    <section class="hscroll section--paper" id="flavours" aria-label="The flavours">
+      <div class="hscroll__pin">
+        <div class="hscroll__track" data-htrack>
+          <div class="hscroll__intro">
+            <p class="mono kicker">The Parlour</p>
+            <h2 class="display display--m" data-split>Seven flavours.<br><em>No wrong answer.</em></h2>
+            <p class="lede">Scroll sideways through the line-up, or tap one to see it come apart in 3D.</p>
+            <a class="link-arrow" href="{{root}}parlour.html" style="margin-top:26px;align-self:flex-start">See the whole Parlour →</a>
+          </div>
+          {{flavourCards}}
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== make it moreish teaser ===== -->
+    <section class="section" id="build-teaser">
+      <div class="wrap feature">
+        <div class="feature__media" data-reveal-img>
+          <img src="{{root}}img/products/big.webp" alt="A celebration ice-cream cake with meringue rosettes and gumballs" loading="lazy" width="800" height="1000">
+          <div class="feature__float" style="left:20px;bottom:20px" data-speed="0.6"><b>22 or 25 cm</b>made to order</div>
+          <div class="feature__float" style="right:20px;top:24px" data-speed="1.2"><b>Live 3D preview</b>watch it build</div>
+        </div>
+        <div>
+          <p class="mono kicker">Make It Moreish</p>
+          <h2 class="display display--l" data-split>Design it.<br><em>Watch it build.</em></h2>
+          <p class="lede">Choose a cheesecake or ice-cream cake, a Tennis, Oreo or Lotus base, a flavour, and pile on the Ferrero, Lindt or fresh strawberries. Your cake builds itself in 3D while you choose.</p>
+          <ul class="feature__list">
+            <li><span>Types</span><span>Ice-cream cheesecake · NY baked · Ice-cream cake</span></li>
+            <li><span>Bases</span><span>Tennis · Digestive · Oreo · Lotus · Ginger</span></li>
+            <li><span>Toppings</span><span>Ferrero Rocher, Raffaello, Rolo, Lindt and more</span></li>
+          </ul>
+          <a class="btn btn--big" href="{{root}}make-it-moreish.html" data-magnetic>Start building</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== live stations teaser ===== -->
+    <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" style="--wave:#2B1D16"><path d="M0 60 C 240 0 480 0 720 45 S 1200 90 1440 30 V90 H0Z"/></svg>
+    <section class="section section--ink" id="stations-teaser">
+      <div class="wrap feature feature--flip">
+        <div class="feature__media" style="aspect-ratio:16/10" data-reveal-img>
+          <img src="{{root}}img/station-overview.webp" alt="The Just Moreish live station kiosk with pastel stripes and a copper espresso machine" loading="lazy" width="1600" height="1000">
+        </div>
+        <div>
+          <p class="mono kicker">Live stations</p>
+          <h2 class="display display--l" data-split>The dessert bar<br><em>comes to you.</em></h2>
+          <p class="lede">Coffee, ice-cream, freezos and croissants, served live at weddings, Eid, corporate events and markets. Step up to the station, tap the menu board and see what's pouring.</p>
+          <div class="beat__actions" style="justify-content:flex-start">
+            <a class="btn btn--big" href="{{root}}live-stations.html" data-magnetic>Visit the station</a>
+            <a class="btn btn--ghost btn--big" data-wa="stations-teaser" data-wa-msg="Hi Just Moreish! I'd like a quote for a live station at my event." href="#" target="_blank" rel="noopener">Get a quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" style="--wave:#2B1D16;transform:scaleY(-1)"><path d="M0 60 C 240 0 480 0 720 45 S 1200 90 1440 30 V90 H0Z"/></svg>
+
+    <!-- ===== coffee teaser ===== -->
+    <section class="section" id="coffee-teaser">
+      <div class="wrap feature">
+        <div>
+          <p class="mono kicker">Coffee &amp; shakes</p>
+          <h2 class="display display--l" data-split>Good coffee.<br><em>Thick shakes.</em></h2>
+          <p class="lede">Cappuccinos, dirty chai and hot chocolate from our own Arabica, plus thick shakes, frappés and coffee freezos for the hot Highveld days.</p>
+          <ul class="feature__list">
+            <li><span>Beans</span><span>250 g · 1 kg</span></li>
+            <li><span>Tasting notes</span><span>Milk chocolate · Almond · Apple</span></li>
+            <li><span>Shakes</span><span>Thick, cold, piled with cream</span></li>
+          </ul>
+          <div class="beat__actions" style="justify-content:flex-start">
+            <a class="btn btn--big" href="{{root}}coffee.html" data-magnetic>See the coffee bar</a>
+            <a class="btn btn--ghost btn--big" href="{{root}}parlour/beans.html">Buy beans</a>
+          </div>
+        </div>
+        <div class="feature__media" data-reveal-img>
+          <img src="{{root}}img/products/cup.webp" alt="A Just Moreish takeaway cappuccino cup with a kraft sleeve" loading="lazy" width="800" height="1000">
+          <div class="feature__float" style="left:20px;top:24px" data-speed="1"><b>100% Arabica</b>roasted for us</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== big close ===== -->
+    <section class="section section--paper" style="text-align:center">
+      <div class="wrap">
+        <div class="stripe" style="width:min(360px,70%);height:16px;margin:0 auto 48px" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <h2 class="display display--xxl" data-chars>I'll just have <em>one.</em></h2>
+        <p class="lede" style="margin:28px auto 0">Said nobody, ever. Fill your box and send it to us on WhatsApp.</p>
+        <div class="beat__actions">
+          <a class="btn btn--big" href="{{root}}parlour.html" data-magnetic>Fill my box</a>
+          <a class="btn btn--ghost btn--big" data-wa="close" href="#" target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </div>
+    </section>

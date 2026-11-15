@@ -1,0 +1,58 @@
+<!--{"title": "Coffee & Milkshakes | Arabica Beans, Live Coffee Bar & Thick Shakes | Just Moreish", "description": "Just Moreish coffee: 100% Arabica beans in 250 g and 1 kg bags, cappuccinos, dirty chai, hot chocolate, coffee freezos, frappés and thick milkshakes. Book a live coffee bar in Johannesburg.", "page": "coffee", "out": "coffee.html", "scripts": ["assets/js/product.js", "assets/js/coffee.js"]}-->
+    <section class="pstory" data-product="cup" data-img="cup" data-seq="cup" data-frames="72" data-kind="cup" style="--chip:#F7E7A6;--chip-ink:#9A6B12;height:500vh">
+      <div class="pstory__stage stage-light">
+        <canvas class="pstory__canvas" aria-hidden="true"></canvas>
+        <img class="pstory__still" src="{{root}}frames/products/cup/0001.webp" alt="A Just Moreish takeaway coffee cup with a kraft sleeve and pastel stripe" width="1400" height="1400">
+        <div class="steam" aria-hidden="true"><i></i><i></i><i></i></div>
+        <ol class="pstory__chapters" aria-hidden="true"><li data-chapter="0"><span>Pour</span></li><li data-chapter="0.26"><span>Beans</span></li><li data-chapter="0.5"><span>Cup</span></li><li data-chapter="0.72"><span>Sleeve</span></li><li data-chapter="0.9"><span>Yours</span></li></ol>
+        <div class="pbeat pbeat--left pbeat--first" data-beat="0,0.16" data-in="0">
+          <p class="mono">01 / Coffee &amp; shakes</p>
+          <h1 class="display display--m">Good coffee. <em>Thick shakes.</em></h1>
+          <p class="lede">Our coffee bar pours at markets, kiosks and events across Joburg, and the beans come home with you.</p>
+        </div>
+        <div class="pbeat pbeat--right" data-beat="0.24,0.42"><p class="mono">02 / The beans</p><h2 class="display display--m">100% <em>Arabica.</em></h2><p class="lede">Roasted for us, with notes of milk chocolate, almond and apple.</p></div>
+        <div class="pbeat pbeat--left" data-beat="0.48,0.64"><p class="mono">03 / Pulled to order</p><h2 class="display display--m">Every cup, <em>fresh.</em></h2><p class="lede">Double shots, silky milk, and a proper hot chocolate for the non-coffee people.</p></div>
+        <div class="pbeat pbeat--right" data-beat="0.7,0.84"><p class="mono">04 / The cup</p><h2 class="display display--m">Wrapped in <em>pastel.</em></h2><p class="lede">Our stripe on every cup, so your photo knows where it came from.</p></div>
+        <div class="pbeat pbeat--left" data-beat="0.9,1.01"><p class="mono">05 / Yours</p><h2 class="display display--m">Coffee + <em>cheesecake.</em></h2><p class="lede">The best pairing in Johannesburg. We tested it extensively.</p></div>
+        <div class="pstory__hint mono" aria-hidden="true">Scroll to explore</div>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="wrap">
+        <header class="section__head section__head--row">
+          <div><p class="mono kicker">The coffee bar</p><h2 class="display display--l" data-split>On the <em>menu board.</em></h2></div>
+          <p class="lede" style="max-width:26em">Served at our live stations and markets. Ask us where we'll be pouring this week.</p>
+        </header>
+        <ul class="menu-board">{{coffeeBoard}}</ul>
+      </div>
+    </section>
+
+    <section class="section section--paper" id="shakes">
+      <div class="wrap">
+        <header class="section__head section__head--row">
+          <div><p class="mono kicker">Milkshakes</p><h2 class="display display--l" data-split>Thick enough to <em>stand a straw in.</em></h2></div>
+          <p class="lede" style="max-width:26em">Real ice-cream, blended thick and piled with cream. Here's the line-up, and ask about specials at the station.</p>
+        </header>
+        <div class="shakes">{{shakeCards}}</div>
+      </div>
+    </section>
+
+    <section class="section" id="beans">
+      <div class="wrap feature">
+        <div class="feature__media" data-reveal-img>
+          <img src="{{root}}img/products/bag.webp" alt="A Just Moreish 250 g coffee bag with pastel squares and spilled beans" loading="lazy" width="800" height="1000">
+          <div class="feature__float" style="right:20px;top:24px" data-speed="1"><b>250 g · 1 kg</b>whole beans</div>
+        </div>
+        <div>
+          <p class="mono kicker">Take it home</p>
+          <h2 class="display display--l" data-split>Our beans, <em>your kitchen.</em></h2>
+          <p class="lede">The same 100% Arabica we pour at the station, in a 250 g bag for the week or a 1 kg bag for the office.</p>
+          <ul class="feature__list"><li><span>250 g</span><span>R125</span></li><li><span>1 kg</span><span>R420</span></li><li><span>Tasting notes</span><span>Milk chocolate · Almond · Apple</span></li></ul>
+          <div class="beat__actions" style="justify-content:flex-start">
+            <a class="btn btn--big" href="{{root}}parlour/beans.html" data-magnetic>Buy beans</a>
+            <a class="btn btn--ghost btn--big" href="{{root}}live-stations.html">Book a coffee bar</a>
+          </div>
+        </div>
+      </div>
+    </section>

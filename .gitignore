@@ -1,0 +1,12 @@
+# working files that are not part of the website
+/blender/
+/brand/
+/_v1/
+/css/
+/js/
+.claude/
+.netlify/
+.DS_Store
+node_modules/
+*.blend
+*.blend1

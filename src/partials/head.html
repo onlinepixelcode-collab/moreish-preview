@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en-ZA" data-page="{{page}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta name="theme-color" content="#F4EEE6">
+  <meta name="color-scheme" content="light only">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:image" content="{{root}}img/share.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="{{root}}img/favicon.svg" type="image/svg+xml">
+  <script>
+    document.documentElement.dataset.theme = "light"; document.documentElement.classList.add("js");
+    try { localStorage.removeItem("jm-theme"); } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,100;1,9..144,300..600,100&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{root}}assets/css/site.css?v={{v}}">
+  {{headExtra}}
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>

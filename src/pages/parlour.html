@@ -1,0 +1,51 @@
+<!--{"title": "The Parlour | Order Ice-Cream Cheesecakes, Gelato, Croissants & Coffee | Just Moreish", "description": "The Just Moreish store: ice-cream cheesecakes in seven flavours, 1 litre gelato tubs, gourmet croissants and Arabica coffee beans. Fill your box and order on WhatsApp.", "page": "parlour", "out": "parlour.html", "scripts": ["assets/js/parlour.js"]}-->
+    <section class="phero phero--short">
+      <div class="blob-bg" style="width:40vw;height:40vw;background:var(--blush);left:-10vw;top:-10vw" data-speed="1"></div>
+      <div class="blob-bg" style="width:34vw;height:34vw;background:var(--mint);right:-6vw;top:10vh" data-speed="-1"></div>
+      <img class="phero__float" src="{{root}}img/products/bubblegum.webp" alt="" style="width:clamp(140px,16vw,260px);right:8vw;top:16vh;border-radius:50%;aspect-ratio:1;object-fit:cover" data-speed="1.6">
+      <img class="phero__float" src="{{root}}img/products/croissant.webp" alt="" style="width:clamp(110px,11vw,190px);right:26vw;bottom:8vh;border-radius:50%;aspect-ratio:1;object-fit:cover" data-speed="2.4">
+      <div class="wrap">
+        <p class="mono kicker">The Parlour · Order online</p>
+        <h1 class="display display--xl phero__title" data-chars>The <em>Parlour</em></h1>
+        <div class="phero__meta">
+          <p class="lede" style="margin:0">Ice-cream cheesecakes, gelato by the litre, gourmet croissants and our own coffee beans. Fill your box, then send it to us on WhatsApp.</p>
+          <a class="link-arrow" href="#shop">Start shopping ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" id="shop">
+      <div class="wrap">
+        <div class="filters" role="group" aria-label="Filter products">
+          <button class="chip is-on" type="button" data-filter="all" aria-pressed="true">Everything</button>
+          <button class="chip" type="button" data-filter="cheesecake" aria-pressed="false">Ice-cream cheesecakes</button>
+          <button class="chip" type="button" data-filter="croissants" aria-pressed="false">Croissants</button>
+          <button class="chip" type="button" data-filter="tubs" aria-pressed="false">Gelato tubs</button>
+          <button class="chip" type="button" data-filter="coffee" aria-pressed="false">Coffee beans</button>
+          <button class="chip" type="button" data-filter="custom" aria-pressed="false">Custom cakes</button>
+        </div>
+        <div class="shop-grid" data-grid>
+          {{shopCards}}
+          <a class="shop-cta" href="{{root}}make-it-moreish.html" data-cat="custom" data-cursor="Build">
+            <div>
+              <p class="mono" style="color:#C9B8AA">Custom cakes · 22 or 25 cm</p>
+              <h3 style="margin-top:14px">Make it <em style="font-style:italic;color:#FF9FBA">yours.</em></h3>
+            </div>
+            <p>Pick a type, base, flavour and toppings and watch your cake build in 3D. We'll send a quote.</p>
+            <span class="btn">Open Make It Moreish</span>
+            <img src="{{root}}img/products/big.webp" alt="" loading="lazy" width="800" height="1000">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper">
+      <div class="wrap">
+        <header class="section__head"><p class="mono kicker">How ordering works</p><h2 class="display display--m" data-split>Three steps to <em>dessert.</em></h2></header>
+        <div class="values">
+          <div class="value" data-reveal><b>1</b><div><h3>Fill your box</h3><p>Add flavours and quantities. Box of 4, 6 or 12 is one tap away.</p></div></div>
+          <div class="value" data-reveal><b>2</b><div><h3>Send on WhatsApp</h3><p>Your order arrives with us as a tidy message: items, date, collect or deliver.</p></div></div>
+          <div class="value" data-reveal><b>3</b><div><h3>Confirm &amp; collect</h3><p>We confirm the total. A 50% deposit secures it, and the balance is paid by EFT before collection or delivery. Keep frozen!</p></div></div>
+        </div>
+      </div>
+    </section>

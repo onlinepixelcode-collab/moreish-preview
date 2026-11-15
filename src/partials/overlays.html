@@ -1,0 +1,48 @@
+  <!-- page transition curtain: the pastel stripe sweeps between pages -->
+  <div class="curtain" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><span class="curtain__mark wordmark"><span>J</span><span>M</span></span></div>
+  <div class="scroll-progress" aria-hidden="true"><i></i></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"><b class="cursor__label"></b></span></div>
+
+  <!-- the box (cart) -->
+  <div class="drawer-scrim" data-cart-close></div>
+  <aside class="drawer" id="cart" aria-label="Your box" aria-hidden="true">
+    <header class="drawer__head">
+      <h2>Your box</h2>
+      <button class="icon-btn" type="button" data-cart-close aria-label="Close your box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </header>
+    <div class="drawer__body" data-lenis-prevent data-cart-items></div>
+    <footer class="drawer__foot" data-cart-foot>
+      <div class="drawer__row"><span>Subtotal</span><strong data-cart-total>R0</strong></div>
+      <fieldset class="seg" aria-label="Collection or delivery">
+        <label><input type="radio" name="jm-fulfil" value="Collection" checked><span>Collect</span></label>
+        <label><input type="radio" name="jm-fulfil" value="Delivery"><span>Deliver</span></label>
+      </fieldset>
+      <label class="field field--compact"><span>When do you need it?</span><input type="date" data-cart-date></label>
+      <label class="field field--compact"><span>Notes (optional)</span><input type="text" data-cart-notes placeholder="Name, area, a message for the cake…" maxlength="160"></label>
+      <a class="btn btn--block" href="#" data-cart-send target="_blank" rel="noopener">Send order on WhatsApp</a>
+      <p class="drawer__fine">We'll reply with a quote and payment details. Prices shown are a guide until confirmed.</p>
+    </footer>
+  </aside>
+
+  <!-- Ask Moreish: the dessert assistant -->
+  <button class="chat-fab" type="button" data-chat-toggle aria-expanded="false" aria-controls="chat" aria-label="Ask Moreish, our dessert assistant">
+    <span class="chat-fab__pulse" aria-hidden="true"></span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 4v-4H6.5A2.5 2.5 0 0 1 4 13.5z"/><circle cx="9" cy="9.5" r="1"/><circle cx="12" cy="9.5" r="1"/><circle cx="15" cy="9.5" r="1"/></svg>
+    <span class="chat-fab__label">Ask Moreish</span>
+  </button>
+  <section class="chat" id="chat" aria-label="Ask Moreish chat" aria-hidden="true">
+    <header class="chat__head">
+      <div class="chat__avatar" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div><h2>Ask Moreish</h2><p class="mono"><span class="dot"></span> Dessert assistant · replies instantly</p></div>
+      <button class="icon-btn" type="button" data-chat-toggle aria-label="Close chat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </header>
+    <div class="chat__log" data-lenis-prevent data-chat-log role="log" aria-live="polite"></div>
+    <div class="chat__chips" data-chat-chips></div>
+    <form class="chat__form" data-chat-form autocomplete="off">
+      <label class="sr-only" for="chat-input">Ask a question</label>
+      <input id="chat-input" type="text" placeholder="Ask about flavours, orders, events…" maxlength="200" required>
+      <button type="submit" aria-label="Send"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-2.5-6.5z"/></svg></button>
+    </form>
+  </section>
+
+  <div class="toasts" aria-live="polite" data-toasts></div>
