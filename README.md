@@ -80,3 +80,7 @@ Station films: about 6–9 MB in total, loaded on demand (the intro first, then 
 - The top sign on the 3D kiosk says "ICE-CREAM · COFFEE · CROISSANTS" (the real sign says "SANDWICHES").
 - Privacy Policy and Terms are drafts and need the client's (ideally a lawyer's) review.
 - `og:image` needs an absolute URL once a domain is chosen.
+
+## Shared preview (live)
+
+https://moreish-preview.netlify.app — any username + the `PREVIEW_PASSWORD` set in Netlify (secret env var). Code lives in the private GitHub repo `onlinepixelcode-collab/moreish-preview`; Netlify redeploys on every `git push`. The gate is `netlify/edge-functions/gate.ts` (see `netlify.toml`).
