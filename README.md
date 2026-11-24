@@ -84,3 +84,5 @@ Station films: about 6–9 MB in total, loaded on demand (the intro first, then 
 ## Shared preview (live)
 
 https://moreish-preview.netlify.app — any username + the `PREVIEW_PASSWORD` set in Netlify (secret env var). Code lives in the private GitHub repo `onlinepixelcode-collab/moreish-preview`; Netlify redeploys on every `git push`. The gate is `netlify/edge-functions/gate.ts` (see `netlify.toml`).
+
+**Open GitHub link (no password):** https://onlinepixelcode-collab.github.io/moreish-preview/ (GitHub Pages from `main`, same as the other demos; updates a minute after each push).
